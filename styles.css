@@ -93,6 +93,21 @@ a:hover {
     justify-content: space-between; /* Space out the image and text */
 }
 
+.storeBtn {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-bottom: 10rem;
+    p {
+        margin-left: 1rem;
+    }
+}
+
+#storeBtn {
+    
+    background-color: white;
+ }
+
 .btn-icon {
     height: 100%;
     margin-right: 10px; /* Space between image and text */
@@ -364,12 +379,26 @@ grid-row-gap: 0px;
 }
 
 .featurescont {
-    display: grid;
+display: grid;
 grid-template-columns: repeat(2, 1fr);
 grid-template-rows: repeat(2, 1fr);
 grid-column-gap: 0px;
 grid-row-gap: 0px;
 }
+
+.featurescontChecks {
+    display: flex;
+    
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    p {
+        margin-left: .5rem;
+    }
+}
+
+.fa-circle-check{
+ color: var(--clr-primary);
+ }
 
 .headerphones {
     display: flex;
@@ -418,14 +447,18 @@ transform: translate(-0%, 0%);
 }
 
 .featurescont.icontext {
-    display: flex;
+    display: grid;
 }
 
-.featurescont-iconbox1 {
-
+.featurescont-iconbox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 }
 
-.featurescont-iconbox2 {
+.featurescont-iconboxText {
 
 }
 
@@ -559,7 +592,7 @@ transform: translate(-0%, 0%);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    
+
 }
 
 .faqtext {
@@ -574,8 +607,11 @@ max-width: 450px;
 }
 
 .faqbox {
-    border-color: hotpink;
     border: 1px solid;
+    border-color: var(--clr-gray-300);
+
+    background-color: white;
+
     border-radius: 8px; /* Set button border radius */
     padding: 24px 24px; /* Set button padding */
     display: grid; /* Set button display to flex */
@@ -584,9 +620,6 @@ max-width: 450px;
     text-decoration: none; /* Remove underline from button */
     height: 166px;
     width: 196px;
-    
-
-
 }
 
 .blue-text {
@@ -625,11 +658,12 @@ max-width: 450px;
 
 }
 
-footer {
+.footer {
     font-size: 14px;
     padding-top: 1rem;
     padding-bottom: 1rem;
     color: var(--clr-gray-600);
+    background-color: var(--clr-gray-100);
 
     .container{
         display: flex;
@@ -703,11 +737,95 @@ footer {
 
 } 
 
-/* JavaSvript för accordion START: */
+
+
+/* NEW ACCORDION START */
+
+.accordion-faq {
+    background-color: #fff;
+    max-width: 570px;
+    margin: 5rem auto;
+    border-radius: .5rem;
+    /* box-shadow:  4px 4px 8px #00000033; */
+    
+
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .7rem;
+    cursor: pointer;
+
+    p {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+}
+
+.btn-round {
+    background-color: var();
+    border: 0;
+    width: 40px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+/* .question:hover .btn-round {
+    background-color: hsl(225, 100%, 95%);
+} */
+
+.answer {
+    padding : .7rem;
+    display: grid;
+    grid-template-rows: 0fr;
+    overflow: hidden;
+    
+    transition: grid-template-rows 300ms;
+    padding: 0 .7rem;
+}
+
+.open .answer {
+    /* display: block; */
+    height: 100px;
+    grid-template-rows: 1fr;
+    
+}
+
+.expandable {
+    min-height: 0px;
+}
+
+.open .btn-round {
+    background-color: #6366f1;
+    transform: rotate(180deg);
+}
+
+.faq-card {
+    border-color: var(--clr-gray-300);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+/* 
+.faq-card.open .btn-round {
+    background-color: #6366f1;
+    transform: rotate(180deg);
+} */
+
+/* NEW ACCORDION END */
 
 /* GAMLA ACCORDION START */
 
- .accordion-container {
+ /* .accordion-container {
     display: flex;
     flex-direction: column; 
     gap: 1rem; 
@@ -771,7 +889,7 @@ footer {
     background-color: white; 
     overflow: hidden; 
     border: 1px solid #d4d7e5;
-} 
+}  */
 
 /* GAMLA ACCORDION SLUT */
 
