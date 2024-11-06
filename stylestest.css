@@ -380,6 +380,8 @@ grid-row-gap: 0px;
 }
 
 .featurescont {
+padding: 0;
+margin: 0 auto;
 display: grid;
 grid-template-columns: repeat(2, 1fr);
 grid-template-rows: repeat(2, 1fr);
@@ -399,6 +401,14 @@ grid-row-gap: 0px;
 
 .fa-circle-check{
  color: var(--clr-primary);
+ }
+
+ .featurescont-icontext {
+ 
+ }
+
+ .featurescont-iconbox {
+
  }
 
 .headerphones {
