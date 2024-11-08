@@ -337,21 +337,14 @@ display: "none";
 }
 
 .features {
-    display: flex;
+    /* display: flex; */
 }
-
-/* GAMMAL KOD START */
-/* .featuresmain {
-    transform: translate(0%, -0%);
-    padding-left: 30rem;
-} */
- /* GAMMAL KOD SLUT */
 
 .featuresmain {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 kolumner */
-    grid-template-rows: repeat(3, auto); /* 3 rader */
-    gap: 1rem; /* Mellanrum mellan rutorna */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 1rem; 
     padding-left: 15rem;
 }
 
@@ -566,7 +559,7 @@ transform: translate(-0%, 0%);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   
     background-color: white;
-    /* border: 3px solid; */
+
     color: var(--clr-gray-900);
     border-radius: 8px; /* Set button border radius */
     width: 416px;
@@ -575,7 +568,7 @@ transform: translate(-0%, 0%);
 
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    padding-top: 1.5rem;
+    /* padding-top: 1.5rem; */
     padding-bottom: 1.5rem;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -585,24 +578,17 @@ transform: translate(-0%, 0%);
     grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-
-    /* padding: 12px 25px; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    text-decoration: none;
-
-    padding-right: 1.5rem;
-    padding-left: 1.5rem; */
 }
 
 .testimonialtext {
     padding-right: 5rem;
+
 }
 
 .testimonialperson {
     display: flex;
     padding-top: 1rem;
+
 }
 
 .testimonialperson h2 {
@@ -613,14 +599,26 @@ transform: translate(-0%, 0%);
     order: 2;
 }
 
+.testimonialbox-text {
+    h2 {
+       margin-bottom: 1px; 
+    };
+    p {
+        color: var(--clr-gray-600)
+    };
+}
+
+.quote-pic {
+    transform: translate(-20%, -40%);
+}
+
 .faq {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    padding-top: 7rem;
-    padding-bottom: .1rem;
+        
 }
 
 .faq-textAboveBoxes {
@@ -629,11 +627,30 @@ transform: translate(-0%, 0%);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    
 
 }
 
 .faqtext {
     
+    :first-child {
+        line-height: 1.5rem;
+    }
+
+    h1 {
+        margin-bottom: 1rem; /* Adjust the vertical space between <h1> and <p> */
+        font-size: 2.5rem; /* Adjust the font size of <h1> */
+        font-weight: 700; /* Adjust the font weight of <h1> */
+        color: var(--clr-gray-900);
+    }
+
+    p {
+        max-width: 23rem;
+        margin-top: 1rem; /* Adjust the vertical space between <h1> and <p> */
+        font-size: 1rem; /* Adjust the font size of <p> */
+        font-weight: 400; /* Adjust the font weight of <p> */
+        color: var(--clr-gray-700);
+    }
 
 }
 
@@ -641,6 +658,8 @@ transform: translate(-0%, 0%);
 display: flex;
 justify-content: space-between;
 max-width: 450px;
+
+margin-top: 3.25rem;
 }
 
 .faqbox {
@@ -674,7 +693,8 @@ max-width: 450px;
     display: flex;;
     width: 1296px;
     height: 222px;
- /* justify-content: space-between; */
+    margin-bottom: 1px;
+    margin-top: 1px;
 
  
 }
@@ -682,11 +702,12 @@ max-width: 450px;
 .belltext {
     
     justify-content: center;
-    padding-top: 72px; 
-    padding-bottom: 72px;
+    padding-top: 4.5rem; 
+    padding-bottom: 4.5rem;
     gap: 1rem;
     display: flex;
     max-width: 40rem;
+    font-size: 10px;
 }
 
 .subscribebox {
@@ -698,36 +719,40 @@ max-width: 450px;
     input {
         border-top-left-radius: 8px;
         border-bottom-left-radius: 8px;
-        border : 1px solid var(--clr-gray-600);
-        height: 3.5rem;
-        width: 20rem;
+        border : 1px solid var(--clr-gray-400);
+        height: 52px;
+        width: 472px;
     }
     
 }
 #subscribebutton {
-    height: 3.7rem;
-    width: 10rem;
+    height: 52px;
+    width: 142px;
     background-color: var(--clr-primary);
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
     transform: translate(-10%, 0%);
     font-weight: bold;
+    font-size: 16px;
     
 
 }
 
 .footer {
     font-size: 14px;
+    
     padding-top: 1rem;
     padding-bottom: 1rem;
     color: var(--clr-gray-600);
     background-color: var(--clr-gray-100);
+    
 
     .container{
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 5px;
+        
     }
 
     .credit {
@@ -797,7 +822,7 @@ max-width: 450px;
 
 
 
-/* NEW ACCORDION START */
+/* ACCORDION START */
 
 .accordion-faq {
     background-color: #fff;
@@ -834,9 +859,6 @@ max-width: 450px;
     transition: all 300ms;
 }
 
-/* .question:hover .btn-round {
-    background-color: hsl(225, 100%, 95%);
-} */
 
 .answer {
     padding : .7rem;
@@ -849,7 +871,6 @@ max-width: 450px;
 }
 
 .open .answer {
-    /* display: block; */
     height: 100px;
     grid-template-rows: 1fr;
     
@@ -873,88 +894,3 @@ max-width: 450px;
     margin-bottom: 1rem;
     overflow: hidden;
 }
-/* 
-.faq-card.open .btn-round {
-    background-color: #6366f1;
-    transform: rotate(180deg);
-} */
-
-/* NEW ACCORDION END */
-
-/* GAMLA ACCORDION START */
-
- /* .accordion-container {
-    display: flex;
-    flex-direction: column; 
-    gap: 1rem; 
-}
-
-.accordion {
-    background-color: white; 
-    color: #444; 
-    cursor: pointer; 
-    padding: 1rem; 
-    width: 100%; 
-    border: none; 
-    text-align: left; 
-    outline: none; 
-    font-size: 1rem; 
-    transition: background-color 0.4s; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-}
-
-.accordion:hover {
-    background-color: #f0f0f0; 
-    border-color: #bbb; 
-}
-
-.active, .accordion:hover {
-    background-color: #ccc; 
-    border-color: #aaa; 
-}
-
-.accordion:after {
-    content: ''; 
-    background-image: url(images/FAQ/arrowunpressed.svg); 
-    background-size: 32px 32px; 
-    width: 32px; 
-    height: 32px; 
-    display: block; 
-    float: right; 
-    margin-left: 1rem; 
-    background-repeat: no-repeat; 
-}
-  
-  .active:after {
-    
-    background-image: url(images/FAQ/arrowBlue.svg);
-    background-size: 53px 53px;
-    width: 53px;
-    height: 53px;
-
-    display: block;
-
-    float: right;
-    margin-left: 5px;
-
-    background-repeat: no-repeat;
-  }
-  
-  
-  .panel {
-    padding: 0 1rem; 
-    display: none; 
-    background-color: white; 
-    overflow: hidden; 
-    border: 1px solid #d4d7e5;
-}  */
-
-/* GAMLA ACCORDION SLUT */
-
-/* NYA ACCORDION START */
-
-
-
-/* NYA ACCORDION SLUT */
-
-  /* JavaScript för Accordion SLUT */
