@@ -252,6 +252,7 @@ display: "none";
     grid-row-gap: 0px;
     height: 876px;
     
+    
 }
 
 .header-left {
@@ -804,6 +805,8 @@ margin-top: 3.25rem;
     header .container{
         grid-template-columns: auto 1fr auto auto;
         gap: 3rem;
+        margin-top: 1px;
+        margin-bottom: 1px;
     }
 
     #auth-signin {
