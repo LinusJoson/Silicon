@@ -46,6 +46,7 @@ body {
     display: grid; /* Set display to grid */
     grid-template-rows: auto 1fr auto; /* Set grid template rows */
     height: 100vh; /* Set height to 100vh */
+    ;
     
 }
 
@@ -55,7 +56,9 @@ body {
     padding-right: var(--container-padding); 
     margin-left: auto; /* Set margin left to auto */
     margin-right: auto; /* Set margin right to auto */
-    
+    /* background-color: hotpink; */
+    margin-top: 6.75rem;
+    margin-bottom: 6.75rem;
 }
 
 a {
@@ -253,10 +256,23 @@ display: "none";
 
 .header-left {
     display: grid;
-grid-template-columns: 1fr;
-grid-template-rows: repeat(2, 1fr);
-grid-column-gap: 0px;
-grid-row-gap: 0px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    
+}
+
+.header-storeText {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15rem;
+
+}
+
+.header-storeText h1 {
+    font-size: 2rem;
+    line-height: 0.1rem;
 }
 
 
@@ -281,8 +297,11 @@ grid-row-gap: 0px;
 }
 
 .storebox {
-    /* padding-left: 122px; */
+    
     display: flex;
+    align-content: left;
+    gap: 1.5rem;
+    padding-top: 3rem;
     
 }
 
@@ -380,23 +399,33 @@ grid-row-gap: 0px;
 }
 
 .featurescont {
-padding: 0;
-margin: 0 auto;
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: repeat(2, 1fr);
-grid-column-gap: 0px;
-grid-row-gap: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+
+background-color: greenyellow 
+}
+
+.featurescontText {
+
 }
 
 .featurescontChecks {
     display: flex;
-    
     padding-top: .5rem;
     padding-bottom: .5rem;
     p {
         margin-left: .5rem;
     }
+
+}
+
+.featurescontBtn {
+    font-weight: bold;
+    margin-top: 1.5rem;
 }
 
 .fa-circle-check{
@@ -442,19 +471,19 @@ transform: translate(-52%, 58.3%);
 }
 
 .featurescont-innersmalloverlay{
-    position: absolute; /* Gör bilden absolut positionerad */
+    /* position: absolute;  */
     z-index: 1;
-    transform: translate(0%, 00%); /* Flytta bilden 50% till vänster och 50% uppåt */
+    transform: translate(0%, 00%); 
 }
 
 .featurescont-inner2bigbackground {
-    display: block;
+    display: inline-block;
 transform: translate(-0%, 0%);
 }
 
 .featurescont-cardoverlay {
-    position: absolute; /* Gör bilden absolut positionerad */
-    transform: translate(40%, -122%); /* Flytta bilden 50% till vänster och 50% uppåt */
+    /* position: absolute; */
+    transform: translate(40%, -122%); 
 }
 
 .featurescont.icontext {
@@ -469,9 +498,6 @@ transform: translate(-0%, 0%);
     grid-row-gap: 0px;
 }
 
-.featurescont-iconboxText {
-
-}
 
 .image-container {
     position: relative; /* Gör containern relativt positionerad */
@@ -594,7 +620,7 @@ transform: translate(-0%, 0%);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     padding-top: 7rem;
-    padding-bottom: 7rem;
+    padding-bottom: .1rem;
 }
 
 .faq-textAboveBoxes {
@@ -649,6 +675,8 @@ max-width: 450px;
     width: 1296px;
     height: 222px;
  /* justify-content: space-between; */
+
+ 
 }
 
 .belltext {
