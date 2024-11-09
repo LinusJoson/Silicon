@@ -369,8 +369,9 @@ display: "none";
 
 .featuresbox {
     display: flex; /* Gör att innehållet visas i en rad */
-    align-items: center; /* Vertikalt centrera innehållet */
+    align-items: flex-start; /* Vertikalt centrera innehållet */
     gap: 1rem; /* Lägger till ett mellanrum mellan bilden och texten */
+    
 }
 
 .featuresbox img {
@@ -393,11 +394,14 @@ display: "none";
 }
 
 .featurescont {
+
+    display: grid;
+/* 
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-row-gap: 0px; */
 
 
 background-color: greenyellow 
