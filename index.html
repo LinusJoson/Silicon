@@ -15,38 +15,38 @@
     <div class="wrapper">
         <!-- BG COLOR START  -->
 <div class="bg-color"> 
-<header>
-        <div class="container">
-            <a id="logo" href=index.html><img src="images/Navbar/logotype.svg" alt="Silicon Logotype"></a>
-            
-            <nav id="main-menu" class="navbar">
-                <a class="nav-link" href="#">Features</a>
-            </nav>
-
-            
-
-            <div id="darkmode-toggle-switch" class="btn-toggle-switch">
-                <span class="label">Dark mode</span>
-                <label for="darkmode-switch" class="toggle-switch">
-                    <input id="darkmode-switch" type="checkbox">
-                    <span class="slider round"></span>
-                </label>
-            </div>
-
-            <a id="auth-signin" href="#" class="btn-primary">
-                <i class="fa-thin fa-user-large"></i>
-                <span>Sign in/up</span>
-            </a>
-            
-            <button class="btn-mobile">
-                <i class="fa-regular fa-bars"></i>
-            </button>
-            
-        </div>
-    </header>
     
+    <header>
+            <div class="container">
+                <a id="logo" href=index.html><img src="images/Navbar/logotype.svg" alt="Silicon Logotype"></a>
+                
+                <nav id="main-menu" class="navbar">
+                    <a class="nav-link" href="#">Features</a>
+                </nav>
+    
+                
+    
+                <div id="darkmode-toggle-switch" class="btn-toggle-switch">
+                    <span class="label">Dark mode</span>
+                    <label for="darkmode-switch" class="toggle-switch">
+                        <input id="darkmode-switch" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+    
+                <a id="auth-signin" href="#" class="btn-primary">
+                    <i class="fa-thin fa-user-large"></i>
+                    <span>Sign in/up</span>
+                </a>
+                
+                <button class="btn-mobile">
+                    <i class="fa-regular fa-bars"></i>
+                </button>
+                
+            </div>
+        </header>
     <main>
-        <div class="container">
+        <div class="container header-container">
             <div class="header">
                 <div class="header-left">
                     <div class="header-storeText">
@@ -57,19 +57,14 @@
                     </div>
                     
                 <div class="storebox">
-                    <button class="btn-store">
-                        <img src="images/Header/Applelogo.svg" alt="">
-                        <p class="Appleupper">Download on the</p>
-                        <p class="Appledowner">App Store</p>
-                    </button>
-                    <button class="btn-store">
-                        <img src="images/Header/Googlelogo.svg" alt="icon" class="btn-icon">
-                        
-                        <div class="btn-text">
-                            <span class="line1">Get it on</span>
-                            <span class="line2">Google play</span>
-                        </div>
-                    </button>
+                    
+                        <a href="https://apple.com/se/app-store/" target="_blank" aria-label="Länk till App Store">
+                            <img src="images/Header/appstoreBtn.svg" alt="Ladda ner från App Store">
+                        </a>
+
+                        <a href="https://play.google.com" target="_blank" aria-label="Länk till Google Play">
+                            <img src="images/Header/googleplayBtn.svg" alt="Ladda ner från Google Play">
+                        </a>
                 </div>
                 <div class="storeBtn">
                     <button class="btn-round" id="storeBtn">
@@ -80,7 +75,7 @@
                 
             </div> 
             <div>
-            <div class="container headerphones">
+            <div class="headerphones">
                 <div class="image-container">
                     <img src="images/Header/iPhone 12 Pro background.svg" alt="iPhone12pro" class="headerbackground">
                     <img src="images/Header/iPhone 12 Pro.svg" alt="iPhone12pro" class="headeroverlay">
@@ -189,8 +184,8 @@
 </div>
 </div>
 
-<div class="container featurescont">
-    <div class="featurescontText">
+<div class="featurescont">
+    <div class="featurescont-top-left">
         <h1>Make your money
         transfer simple and clear</h1>
 
@@ -199,40 +194,47 @@
         </div>       
 
         <div class="featurescontChecks"> 
-            <i class="fa-regular fa-circle-check" class="check"></i> <p>Banking transactions are free for you</p>
+            <i class="fa-regular fa-circle-check" class="check"></i> <p>No monthly cash comission</p>
         </div>
 
         <div class="featurescontChecks"> 
-            <i class="fa-regular fa-circle-check" class="check"></i> <p>Banking transactions are free for you</p>
+            <i class="fa-regular fa-circle-check" class="check"></i> <p>Manage payments and transactions online</p>
         </div>
         
-        <button class="btn-primary">Learn more</button>
+        <button class="btn-primary" id="featurescontBtn" > <span>Learn more <i class="fa-solid fa-arrow-right"></i></span> </button>
     
     </div>        
         
-    <div>
+    <div class="featurescont-top-right">
         <img src="images/Features DOS/innerbig.svg" alt="" class="featurescont-innerbigbackground">
         <img src="images/Features DOS/innersmall.svg" alt="" class="featurescont-innersmalloverlay">
-        test2
+        
     </div>
 
-    <div>
+    <div class="featurescont-bottom-left">
         <img src="images/Features DOS/inner2big.svg" class="featurescont-inner2bigbackground">
         <img src="images/Features DOS/card.svg" class="featurescont-cardoverlay">
     </div>
     
     
-    <div class="featurescont-icontext">
+    <div class="featurescont-bottom-right">
         <h1>Receive payment from international bank details</h1>
-        <div class="featurescont-iconbox">
-            <img src="images/Features DOS/iconbox1.svg" class="featurescont-iconbox1"> 
-            <img src="images/Features DOS/iconbox2.svg" class="featurescont-iconbox2">
-            <button class="btn-primary">Learn more</button>
-            <!-- <p>test</p> -->
+        <div class="icon-container">
+            <div class="icon-item">
+                <img src="images/Features DOS/iconbox1.svg" class="featurescont-iconbox1">
+                <p>Manage your payments online. Mollis congue egestas egestas fermentum fames.</p>
+
+            </div>
+            <div class="icon-item">
+                <img src="images/Features DOS/iconbox2.svg" class="featurescont-iconbox2">
+                <p>A elementur and imperdiet enim, pretium etiam facilisi aenean quam mauris</p>
+            </div>
         </div>
         <div class="featurescont-iconbox">
-            <!-- <p>Test</p> -->
         </div>
+            <button class="btn-primary" id="btn2-featurescont"><span>Learn more <i class="fa-solid fa-arrow-right"></i></span></button>
+            
+
     </div>  
 </div>
 
@@ -240,11 +242,12 @@
 
     <div class="container testimonials">
         <div class="testimonialtext">
-            <h1>Clients are Loving our App</h1>
+            <h1>Clients are</h1>
+            <h1>Loving our App</h1>
         </div>
         <div class="testimonialboxes">
         <div class="testimonialbox">
-            <img src="images/Testimonials/quotes.svg" alt="">
+            <img src="images/Testimonials/quotes.svg" class="quote-pic" alt="">
             <div class="scoring">
                 <img src="images/Testimonials/Vectorstarfilled.svg" alt="">
                 <img src="images/Testimonials/Vectorstarfilled.svg" alt="">
@@ -255,15 +258,17 @@
             <p>Sit pretium aliquam tempor, orci dolor sed maecenas rutrum sagittis. Laoreet posuere rhoncus, egestas lacus, egestas justo aliquam vel. Nisi vitae lectus hac hendrerit. Montes justo turpis sit amet.</p>
             <div class="testimonialperson">
             <img src="images/Testimonials/Fannie.svg" alt="">
-            <h2>Fannie Summers</h2>
-            <p>Designer</p>
+            <div class="testimonialbox-text">
+                <h2>Fannie Summers</h2>
+                <p>Designer</p>
+            </div>
             
         </div>
             
         </div>
         <div class="testimonialbox">
             
-            <img src="images/Testimonials/quotes.svg" alt="">
+            <img src="images/Testimonials/quotes.svg" class="quote-pic" alt="">
             
             <div class="scoring">
                 <img src="images/Testimonials/Vectorstarfilled.svg" alt="">
@@ -274,14 +279,16 @@
             </div>
             <p>Nunc senectus leo vel venenatis accumsan vestibulum sollicitudin amet porttitor. Nisl bibendum nulla tincidunt eu enim ornare dictumst sit amet. Dictum pretium dolor tincidunt egestas eget nunc.</p>
             <div class="testimonialperson">
-            <img src="images/Testimonials/Albert.svg" alt="">
-            <h2>Albert Flores</h2>
-            <p>Developer</p>
+                <img src="images/Testimonials/Albert.svg" alt="">
+                <div class="testimonialbox-text">
+                <h2>Albert Flores</h2>
+                <p>Developer</p>
             </div>
         </div>
     </div>    
     </div>
 
+</div>
 </div>
 <div class="container faq">
     <div class="faq-textAboveBoxes">
@@ -400,7 +407,9 @@
            <h1>Subscribe to our newsletter to stay informed about latest updates</h1>
         </div>
         <div class="subscribebox">
-            <input type="email" placeholder="Your email address">
+            <span class="email-icon"><i class="fa-light fa-envelope"></i></span>
+            <input type="email" placeholder= "         Your email">
+        </input>
             <button class="btn-primary" id="subscribebutton">Subscribe</button>
         </div>
     </div>
@@ -415,7 +424,7 @@
 </div>
 </main>
     
-<!-- </div> -->
+</div>
 <script src="script.js"></script>
 </body>
 </html>
