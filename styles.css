@@ -1,4 +1,18 @@
 
+/* 
+
+<!-- 
+ 
+  /\_/\   ||o//     
+ (='.'=)  ||//_________________________________________________________________________
+  (")__(")|//|Författare: Linus Johansson | Filnamn: index.html | Datum: 2024-11-10   |
+--------- // |________________________________________________________________________| 
+
+-->
+
+
+*/
+
 
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
@@ -333,7 +347,6 @@ display: "none";
 
 /* FEATURES START */
 
-
 .featuresmain {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -381,6 +394,8 @@ display: "none";
     font-size: 1.5rem; /* Gör texten större, justera efter behov */
     margin-bottom: 0.5rem; /* Justera mellanrummet mellan raderna, justera efter behov */
 }
+
+
 
 .featuresbox-text p:last-child {
     margin-top: 0; /* Ta bort eventuellt extra mellanrum ovanför den andra raden */
