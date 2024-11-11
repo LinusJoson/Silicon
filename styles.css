@@ -817,6 +817,14 @@ footer {
 }
 /* FOOTER END */
 
+/* DARK MODE START */
+
+@media (prefers-color-scheme: dark) {
+
+}
+
+/* DARK MOD END */
+
 /* Anpassning till tablet */
 
 @media (min-width: 768px) {
