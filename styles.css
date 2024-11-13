@@ -1,15 +1,11 @@
 
 /* 
 
-<!-- 
  
   /\_/\   ||o//     
  (='.'=)  ||//_________________________________________________________________________
   (")__(")|//|Författare: Linus Johansson | Filnamn: index.html | Datum: 2024-11-10   |
 --------- // |________________________________________________________________________| 
-
--->
-
 
 */
 
@@ -36,6 +32,23 @@
     --br-1: 0.5em; /* Larger border radius */
     --container-padding: 1rem; /* Container padding */
     --transition-time: all 0.2s; /* Transition time for all properties */
+}
+
+.dark {
+    color-scheme: dark;
+    --background-color: #0b0f19;
+    --background-secondary-color: #0B0F19;
+    --background-gradient-color: linear-gradient(0deg, #6366f11a 0%, #da46ef0d 42%, #0B0F19);
+    --background-accent-color: #191a24;
+
+    --button-download-background-color: #E2E5F1;
+    --button-download-text-color: #0B0F19;
+
+    --text-color: #666b7d;
+    --text-headline-color: #FFFFFF;
+
+    --border-color: #33354D;
+    --box-shadow: 0 0 5px 2px rgba(180, 180, 180, 0.1);
 }
 
 * {
